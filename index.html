@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سرویس ابری گیت ابر</title>
+  <meta charset="utf-8">
+  <meta name="discription" content="دیپلوی روی سرور فقط با یک خط فرمان (CLI)">
+  <meta name="keywords"
+    content=" خرید هاست, سرور ابری ایران, هاست تست, سرویس ابری, سرویس دیتابیس ابری, سرور ابری ساعتی, سرور ابری ایران, دواپس, iran cloud"
+    data-gatsby-head="true" />
+    <meta property="twitter:description" content="خدمات کلود، PaaS و DBaaS و هاست در ایران - سرور ابری ساعتی" data-gatsby-head="true"/><meta property="og:image:height" content="450" data-gatsby-head="true"/><meta property="og:image:width" content="900" data-gatsby-head="true"/><meta name="twitter:title" content="خدمات رایانش ابری - گیت ابر" data-gatsby-head="true"/><meta property="og:url" content="https://Gitabr.ir/" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Gitabr">
+  <meta name="twitter:url" content="https://www.arvancloud.ir/fa">
+  <meta name="twitter:title" content="گیت ابر | زیرساخت یکپارچه ابری">
+  <meta name="twitter:description" content="ابر گیت ابر شرکتی های تک در حوزه‌ فناوری ابری (کلود) در ایران است که محصولاتی مانند شبکه توزیع محتوا (CDN)، سرور ابری، فضای ابری، کانتینر ابری (سکوی ابری) و پلتفرم ویدیو به کسب‌وکارها ارایه می‌دهد.">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+  <link rel="stylesheet" href="scribbler-global.css">
+  <link rel="stylesheet" href="scribbler-landing.css">
+  <link rel="author" href="humans.txt">
+</head>
+
+<body>
+  <nav>
+    <div class="logo"></div>
+    <ul style="direction: rtl;" class="menu">
+      <div class="menu__item toggle"><span></span></div>
+      <li class="menu__item"><a href="#wearegitabr" class="link link--dark"> گیت ابر چیه؟</a></li>
+      <li class="menu__item"><a href="#about" class="link link--dark"> درباره ما</a></li>
+      <li class="menu__item"><a href="#services" class="link link--dark"></i> خدمات ما</a></li>
+      <li class="menu__item"><a href="doc.html" class="link link--dark"></i> مسنتندات</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <h1 class="hero__title">گیت ابر</h1>
+    <p class="hero__description">جهانی امن‌تر، سریع‌تر و دردسترس‌تر</p>
+  </div><br><br>
+
+  <div class="hero__terminal">
+    <pre>
+
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">Hello ~ $ </code>
+      </pre>
+  </div>
+  <div id="wearegitabr" style="direction: rtl;" class="wrapper">
+    <div class="installation">
+      <h3 class="section__title"> داستان شکل گیری ما </h3>
+      <p>
+        داستان ما از آنجای شروع می‌شود که به عنوان یک توسعه دهنده همیشه برای راه اندازی سرورهای اختصاصی یا Vps پروژه‌های
+        مختلف، نیاز به این داشته‌ایم که یک مدیر سیستم استخدام کنیم تا کار را‌ه‌اندازی و مدیریت سرورها را برایمان انجام
+        دهد.
+
+        این موضوع در پروژه‌های مختلف بارها برایمان اتفاق افتاد و هر بار با داستان‌های عجیب و غریبی مواجه شده‌ایم که کار
+        پروژه‌های ما را با چالش رو به رو میکرد و حتی زمانی که پروژه‌ها شروع به رشد میکردند، مدیریت سرورهای که در ابتدا
+        تهیه کرده بودیم حتی سخت تر هم می‌شد.
+
+        از این رو تصمیم گرفتیم یکبار برای همیشه مشکل راه اندازی و مدیریت سرور را با راه‌اندازی ابزاری به قدرتمندی Gitabr
+        حل کنیم. حالا Gitabr اینجاست و در مسیر شکل گیری به آن چیزی قرار دارد که ما همیشه خواهان آن بودیم و برای آن زحمت
+        کشیده‌ایم.
+      </p>
+      <h3 id="about" class="section__title"> هدف ما </h3>
+      <div class="tab__container">
+        <p>
+          ما در گیت ابر یک هدف بزرگ داریم و آن این است که به توسعه‌دهندگان و استارتاپ‌های ایرانی کمک کنیم تا دغدغه راه
+          اندازی و مدیریت سرورهای مختلف را برای پروژه خود را به شکل کامل حل کنند و به شکل کامل بتوانند هر آنچه برای راه
+          اندازی و نگه‌داری یک وبسایت نیاز است را از طریق گیت ابر انجام دهند.
+        </p>
+        <!--<h3 id="about" class="section__title"> هدف ما </h3>
+         <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">جنگو</li>
+            <li class="tab" data-tab="linux">ری اکت</li>
+            <li class="tab" data-tab="win">ویندوز</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$  npm i -g @Gitabr/cli</code>
+            <code class="tab__pane linux">$  npm i -g @Gitabr/cli</code>
+            <code class="tab__pane win">$  npm i -g @Gitabr/cli</code>
+          </pre>-->
+      </div>
+    </div><br><br>
+    <h2 id="services" style="text-align: center;" class="section__title">خدمات ما در گیت ابر</h2>
+    <div style="direction: rtl;" class="feature">
+      <div class="feature__item">
+        <h3 class="section__title">سریع تر از همه</h3>
+        <p>سریع تر از همه اپلیکیشنت رو دیپلوی کن</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">امنیت</h3>
+        <p>آسوده بخوابید ما مراقب سرویس شما هستیم.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">مستندات</h3>
+        <p>مستنداتی که اصلا خواب اور نیست! </p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">دیتابیس</h3>
+        <p>ما از معرف ترین دیتابیس دنیا <span class="code code--inline">MSQL</span> پشتیبانی میکنیم.</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">دیدی شفاف به دنیای ابری</h3>
+        <p>همه چیز تحت کنترل شماست،
+          دید شفاف از عملکرد هر سرویس با مانیتورینگ پیشرفته</p>
+      </div>
+      <div class="feature__item">
+        <h3 class="section__title">خدماتی رایگان</h3>
+        <p>ما اینجا تا سقف <span class="code code--inline">250MB</span> فضای رایگان به شما میدهیم! </p>
+      </div>
+    </div>
+    <!--<div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Default Keybindings</h3>
+          <li>Quit without saving <span class="keybinding__label">Ctrl+C</span></li>
+          <li>Save <span class="keybinding__label">Cmd+S</span></li>
+          <li>Save and Quit <span class="keybinding__label">Ctrl+D</span></li>
+          <li>Undo <span class="keybinding__label">Cmd+Z</span></li>
+        </ul>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Markdown Keybindings</h3>
+          <li><span class="keybinding__label">Ctrl+A</span> Insert Link Markdown</li>
+          <li><span class="keybinding__label">Ctrl+I</span> Insert Image Markdown</li>
+          <li><span class="keybinding__label">Ctrl+V</span> Insert YouTube Video</li>
+          <li><span class="keybinding__label">Ctrl+T</span> Insert Table</li>
+        </ul>
+      </div>-->
+    <div class="callout">
+      <p>مستنداتی کامل از تمام محصولات ما</p>
+      <a href="doc.html" class="button--primary">مستندات</a>
+    </div>
+  </div>
+  <!-- <div style="direction: rtl;" class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.7</h4>
+            <small class="changelog__date">10/12/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Improving the writing workflow with better key bindings</li>
+              <li>Design updates</li>
+              <li>SSL Verification for web hooks</li>
+              <li>Render Emoji</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.6</h4>
+            <small class="changelog__date">7/30/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Adding Unicode support</li>
+              <li>Basic text highlighting</li>
+              <li>Fresh Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.5</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Save default md file in new folders</li>
+              <li>Ability to quick search on existing notes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="#" class="button--secondary">Checkout Full Log</a>
+        </div>
+      </div>
+    </div>-->
+  <footer style="text-align: center; font-size: 25px;" class="footer-icon">
+    <a href="https://github.com/gitabr"><i style="color: black;" class="fa fa-github"></i></a>
+    <a href="https://t.me/gitabr"><i style="color: rgb(0, 0, 0);" class="fa fa-telegram"></i></a>
+    <a href="https://instagram.com/gitabr"><i style="color: black;" class="fa fa-instagram"></i></a>
+    <a href="https://x.com/gitabr"><i style="color: rgb(0, 0, 0);" class="fa fa-twitter"></i></a>
+  </footer>
+  <footer style="direction: rtl;" class="footer">&copy; تمامی حقوق برای <a href="" target="_blank"
+      class="link link--light">گیت ابر</a> محفوظ است.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="scribbler.js"></script>
+</body>
+
+</html>
