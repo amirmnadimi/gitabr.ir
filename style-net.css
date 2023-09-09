@@ -2,7 +2,7 @@
  * Neema Peyda <October 2015>
  */
 
-@font-face {
+ @font-face {
 	font-family: 'SPC_Dana';
 	font-style: normal;
 	font-weight: bold;
@@ -78,6 +78,7 @@
 }
 
 #sc-wrapper .sc-fa {
+  font-family: '', 'IRANSans', Tahoma, Arial, sans-serif !important;
   direction: rtl;
 }
 
